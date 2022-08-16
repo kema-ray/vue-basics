@@ -3,6 +3,16 @@ const app = Vue.createApp({
         return {
             courseGoal: 'Finish the course and learn vue!',
             vueLink: 'https://vuejs.org/'
+        };
+    },
+    methods: {
+        outputGoal() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return 'Learn Vue!';
+            } else {
+                return 'Master Vue!';
+            }
         }
     }
 });
